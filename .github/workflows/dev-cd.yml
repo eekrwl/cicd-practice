@@ -58,7 +58,7 @@ jobs:
       - name: Deploy
         run: |
           aws deploy create-deployment \
-          --application-name cicd-practice \
+          --application-name mykkumi-server-dev \
           --deployment-config-name CodeDeployDefault.AllAtOnce \
           --deployment-group-name cicd-test-dev-group \
           --file-exists-behavior OVERWRITE \
